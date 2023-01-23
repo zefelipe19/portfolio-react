@@ -1,0 +1,19 @@
+{   
+    "Projects": [
+            {   
+            "id": 1,
+            "name": "Estudos React",
+            "link": "https://zefelipe-estudos.netlify.app",
+            "github": "https://github.com/zefelipe19/Estudos_React",
+            "description" : "A simple ToDo List build with react.js."
+        },
+        {
+            "id": 2,
+            "name": "GitHub-Api",
+            "link": "https://github-users-zefelipe19.netlify.app",
+            "github": "https://github.com/zefelipe19/GitHub-Api",
+            "description": "A web app build with react.js using github api to get users information."
+        }
+    ]
+    
+}
