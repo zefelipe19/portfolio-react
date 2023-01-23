@@ -11,9 +11,9 @@ function NavBar () {
             <nav className={style.navbar}>
                 <Link to={"#"}><img src={Icon} alt="J.F icon" /></Link>
                 <ul className={style.navitens}>
-                    <li><Link to={"#"}>Home</Link></li>
-                    <li><Link to={"#"}>Projects</Link></li>
-                    <li><Link to={"#"}>About</Link></li>
+                    <li><Link to={"#"} rel="noopener noreferrer">Home</Link></li>
+                    <li><Link to={"#"} rel="noopener noreferrer">Projects</Link></li>
+                    <li><Link to={"#"} rel="noopener noreferrer">About</Link></li>
                 </ul>
             </nav>
         </header>
