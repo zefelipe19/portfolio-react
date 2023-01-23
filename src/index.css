@@ -24,3 +24,10 @@ a {
 ul {
   list-style-type: none;
 }
+
+footer {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  min-width: 100vw;
+}
