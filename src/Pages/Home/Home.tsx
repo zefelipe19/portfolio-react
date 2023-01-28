@@ -1,7 +1,8 @@
 import React from "react"
-import {  Link  } from "react-router-dom"
 
 import style from "./style.module.css"
+
+import Card from "../../Components/Card/Card"
 
 export default function Home() {
     return(
@@ -14,36 +15,17 @@ export default function Home() {
                 <div className={style.about}>
                     <h4>Hi, I'm Felipe, I'm from Brazil.</h4>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit magni quo aliquid accusamus odio, expedita voluptatum harum nisi doloremque facilis id maxime placeat iusto dolores, commodi, non distinctio animi officiis.
+                        Since i was a kid i'm fascinated for technology and i get start my studies in 2022 when i finally got a laptop.
+                        I started with Python and your beautiful write and after i start to learn HTML, CSS and JavaScript for Web Development.
+                        Now i have the knowlogy necessary to get start my carrear and continue to improve my skills to build every aplication better then other.
                     </p>
                 </div>
                 <div className={style.projects}>
                     <h4>Take a look on my projects.</h4>
+                    <Card />
                 </div>
             </main>
-            <footer>
-                <div className={style.contact}>
-                    <h4>Let's work togheder.</h4>
-                    <div>
-                        <form>
-                            <label htmlFor="email">E-mail</label>
-                            <input type="email" name="email" id="email" placeholder="Your E-mail"/>
-                            <label htmlFor="content">Content</label>
-                            <input type="text" name="content" id="content" />
-                            <input type="submit" value="Send" />
-                        </form>
-                    </div>
-                    <div>
-                        <ul>
-                            <li><Link to={"https://github.com/zefelipe19"} target="_blank" rel="noopener noreferrer">GitHub</Link></li>
-                            <li><Link to={"https://www.linkedin.com/in/jose-felipe-paula"} target="_blank" rel="noopener noreferrer">Linkedin</Link></li>
-                            <li><Link to={"https://www.instagram.com/ze_felipe1903/"} target="_blank" rel="noopener noreferrer"></Link>Instagram</li>
-                        </ul>
-                    </div>
-                </div>
-            </footer>
         </>
         
     )
 }
-
