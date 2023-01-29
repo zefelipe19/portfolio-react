@@ -1,10 +1,14 @@
 import React from "react"
+import {useEffect, useState} from "react"
 
 import style from "./style.module.css"
 
 import Card from "../../Components/Card/Card"
+import db from "../../assets/database.json"
 
 export default function Home() {
+
+
     return(
         <>
             <main>
@@ -22,7 +26,15 @@ export default function Home() {
                 </div>
                 <div className={style.projects}>
                     <h4>Take a look on my projects.</h4>
-                    <Card />
+                    <div className={style.projectsItens}>
+                        {
+                            db.Projects.map((project) => {
+                                return(
+                                    <Card title={project.name} description={project.description} link={project.link}/>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
             </main>
         </>

@@ -17,6 +17,19 @@
   padding: 1rem;
 }
 
+.contact form input {
+  height: 50px;
+  padding: 5px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16pt;
+}
+
+.contact form input:nth-child(4n) {
+  height: 100px;
+  margin-bottom: 10px;
+}
+
 .contact ul {
   display: flex;
   gap: 15px;
