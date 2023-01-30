@@ -4,9 +4,7 @@
   flex-direction: column;
 
   background-color: #444;
-  border: solid #fff 1px;
-  border-right: 0;
-  border-left: 0;
+  border-top: solid #fff 1px;
 }
 
 .contact form {
@@ -36,4 +34,15 @@
   justify-content: center;
   align-items: center;
   padding: 1rem;
+}
+
+@media (min-width: 500px) {
+  .contact {
+    padding: 3rem;
+  }
+  .contact h4 {
+    font-size: x-large;
+    font-family: monospace;
+    margin-bottom: 1rem;
+  }
 }

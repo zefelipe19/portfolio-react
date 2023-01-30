@@ -13,12 +13,12 @@
   border-left: 0;
 
   margin-bottom: 1rem;
+  font-family: monospace;
 }
 
 .presentation h1 {
   font-weight: bolder;
   font-size: 28pt;
-  font-family: monospace;
 }
 
 .about {
@@ -31,7 +31,7 @@
   border-left: 0;
 
   margin-bottom: 1rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: sans-serif;
 }
 
 .projects {
@@ -53,4 +53,36 @@
   gap: 2rem;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 500px) {
+  .presentation {
+    height: 500px;
+    font-size: 28pt;
+  }
+
+  .presentation h1 {
+    font-size: 50pt;
+  }
+
+  .about {
+    font-size: larger;
+    padding: 5rem;
+  }
+
+  .about h4 {
+    font-size: x-large;
+    font-family: monospace;
+  }
+
+  .projects {
+    padding: 5rem;
+    font-size: large;
+  }
+
+  .projects h4 {
+    font-size: x-large;
+    font-family: monospace;
+    margin-bottom: 1rem;
+  }
 }

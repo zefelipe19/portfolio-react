@@ -27,6 +27,5 @@ ul {
 footer {
   bottom: 0;
   position: relative;
-  width: 100%;
-  min-width: 100vw;
+  min-width: 100%;
 }
