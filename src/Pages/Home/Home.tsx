@@ -30,7 +30,13 @@ export default function Home() {
                         {
                             db.Projects.map((project) => {
                                 return(
-                                    <Card title={project.name} description={project.description} link={project.link}/>
+                                    <Card
+                                    key={project.id}
+                                    title={project.name} 
+                                    description={project.description} 
+                                    link={project.link}
+                                    github={project.github}
+                                    image={project.image}/>
                                 )
                             })
                         }

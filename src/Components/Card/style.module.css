@@ -17,7 +17,7 @@
   margin: 5px 0;
 }
 
-.card div {
+.description {
   margin: 5px;
 
   display: flex;
@@ -26,9 +26,21 @@
   justify-content: center;
 }
 
-.card img {
+.description img {
   height: 90px;
   width: 90px;
   margin: 5px;
   border-radius: 8px;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (min-width: 800px) {
+  .card {
+    height: 20%;
+    width: 40%;
+  }
 }

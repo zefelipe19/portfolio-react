@@ -9,10 +9,10 @@ function NavBar () {
     return(
         <header>
             <nav className={style.navbar}>
-                <Link to={"#"}><img src={Icon} alt="J.F icon" /></Link>
+                <Link to={"/"}><img src={Icon} alt="J.F icon" /></Link>
                 <ul className={style.navitens}>
-                    <li><Link to={"#"} rel="noopener noreferrer">Home</Link></li>
-                    <li><Link to={"#"} rel="noopener noreferrer">Projects</Link></li>
+                    <li><Link to={"/"} rel="noopener noreferrer">Home</Link></li>
+                    <li><Link to={"projects/"} rel="noopener noreferrer">Projects</Link></li>
                     <li><Link to={"#"} rel="noopener noreferrer">About</Link></li>
                 </ul>
             </nav>
