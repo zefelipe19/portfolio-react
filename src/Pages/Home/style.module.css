@@ -32,7 +32,7 @@
   border-left: 0;
 
   margin-bottom: 1rem;
-  font-family: sans-serif;
+  font-family: monospace;
 }
 
 .projects {
@@ -58,7 +58,7 @@
 
 @media (min-width: 500px) {
   .presentation {
-    height: 500px;
+    height: 90vh;
     font-size: 28pt;
   }
 
@@ -68,7 +68,8 @@
 
   .about {
     font-size: larger;
-    padding: 5rem;
+    padding: 5rem 50% 5rem 3rem;
+    align-items: flex-start;
   }
 
   .about h4 {
