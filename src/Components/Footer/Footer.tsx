@@ -1,5 +1,6 @@
 import React from "react"
 import { useState, FormEvent } from "react"
+import emailjs from "@emailjs/browser"
 
 import style from "./style.module.css"
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"
@@ -14,9 +15,24 @@ export function Footer () {
         event.preventDefault()
         
         if(email === "" || name === "" || message === "") {
-            alert("Nop")
+            alert("Please check all spaces...")
             return
         }
+        const templateParams = {
+            from_name: name,
+            message: message,
+            email: email
+        }
+        emailjs.send('service_ibbch5l', 'template_bm1xk4m', templateParams, 'PljicUbcxAqtYGntf')
+        .then((response) => {
+            console.log("Email enviado", response.status, response.text)
+            setName('')
+            setEmail('')
+            setMessage('')
+        })
+        .catch(error => {
+            console.log(error)
+        })
     }
     return(
         <footer>
@@ -34,7 +50,7 @@ export function Footer () {
                     <textarea name="content" id="content" cols={30} rows={10}
                     placeholder="Your Idea..." onChange={(event) => setMessage(event.target.value)}></textarea>
 
-                    <input type="submit" value="Send" />
+                    <input type="submit" value="Send"/>
                 </form>
                 
                 <ul className={style.social}>
