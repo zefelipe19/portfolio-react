@@ -1,12 +1,11 @@
 import React from "react"
-import {useEffect, useState} from "react"
 
 import style from "./style.module.css"
 
-import Card from "../../Components/Card/Card"
+import { Card } from "../../Components/Card/Card"
 import db from "../../assets/database.json"
 
-export default function Home() {
+export function Home() {
 
 
     return(

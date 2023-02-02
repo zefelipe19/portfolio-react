@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react"
 import axios from "axios";
 
-import Card from "../../Components/Card/Card";
+import { Card } from "../../Components/Card/Card";
 
 import styles from "./style.module.css"
 
@@ -20,7 +20,7 @@ function ProjectCard ({name, url}:ProjectCardProps) {
     )
 }
 
-function Projects () {
+export function Projects () {
     const [allProjects, setAllProjects] = useState([])
 
     useEffect(() => {
@@ -48,5 +48,3 @@ function Projects () {
         </main>
     )
 }
-
-export default Projects

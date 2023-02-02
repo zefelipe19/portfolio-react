@@ -1,17 +1,16 @@
 import React from "react"
-import { useState } from "react"
-import {  Link  } from "react-router-dom"
+import { useState, FormEvent } from "react"
 
 import style from "./style.module.css"
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"
 
-function Footer () {
-    const [email, setEmail] = useState()
-    const [name, setName] = useState()
-    const [message, setMessage] = useState()
+export function Footer () {
+    const [email, setEmail] = useState('')
+    const [name, setName] = useState('')
+    const [message, setMessage] = useState('')
     
 
-    function handleForm(event) {
+    function handleForm(event: FormEvent<HTMLFormElement>) {
         event.preventDefault()
         
         if(email === "" || name === "" || message === "") {
@@ -59,5 +58,3 @@ function Footer () {
         </footer>
     )
 }
-
-export default Footer

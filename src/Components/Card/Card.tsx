@@ -12,7 +12,7 @@ type CardProps = {
 }
 
 
-function Card ({title, description, link, github, image}:CardProps) {
+export function Card ({title, description, link, github, image}:CardProps) {
     return(
         <div className={style.card}>
             <h5>{title}</h5>
@@ -27,5 +27,3 @@ function Card ({title, description, link, github, image}:CardProps) {
         </div>
     )
 }
-
-export default Card

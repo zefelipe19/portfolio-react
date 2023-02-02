@@ -5,7 +5,7 @@ import Icon from "../../assets/JF.svg"
 import style from "./style.module.css"
 
 
-function NavBar () {
+export function NavBar () {
     return(
         <header>
             <nav className={style.navbar}>
@@ -19,5 +19,3 @@ function NavBar () {
         </header>
     )
 }
-
-export default NavBar
