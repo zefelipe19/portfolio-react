@@ -9,11 +9,11 @@
 
 .navitens {
   display: flex;
-  gap: 15px;
+  gap: 1rem;
 
-  font-weight: 400;
+  font-weight: 300;
   font-family: monospace;
-  font-size: large;
+  font-size: medium;
 }
 
 .navbar img {
