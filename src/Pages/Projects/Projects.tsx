@@ -38,7 +38,7 @@ export function Projects () {
             <h1>All GitHub Projects</h1>
             <div>
                 {
-                    allProjects.map((project) => {
+                    allProjects.map((project:{id: number, name:string, html_url: string}) => {
                         return(
                             <ProjectCard key={project.id} name={project.name} url={project.html_url}/>
                         )
