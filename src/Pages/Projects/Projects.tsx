@@ -2,8 +2,6 @@ import React from "react";
 import { useState, useEffect } from "react"
 import axios from "axios";
 
-import { Card } from "../../Components/Card/Card";
-
 import styles from "./style.module.css"
 
 type ProjectCardProps = {
@@ -33,12 +31,19 @@ export function Projects () {
 
         getAllProjects()
     }, [])
+
+    type ProjectProps = {
+        id: number,
+        name: string,
+        html_url: string,
+    }
+
     return(
         <main>
             <h1>All GitHub Projects</h1>
             <div>
                 {
-                    allProjects.map((project:{id: number, name:string, html_url: string}) => {
+                    allProjects.map((project: ProjectProps) => {
                         return(
                             <ProjectCard key={project.id} name={project.name} url={project.html_url}/>
                         )

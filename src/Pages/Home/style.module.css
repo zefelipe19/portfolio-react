@@ -15,6 +15,23 @@
 
   margin-bottom: 1rem;
   font-family: monospace;
+
+  background-image: url("../../assets/Images/background-2.jpg");
+  background-size: cover;
+}
+
+.presentationLinks {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.presentationLinks a {
+  border: solid #fff 0.5px;
+  padding: 10px;
+  border-radius: 45%;
+
+  background-color: #44444457;
 }
 
 .presentation h1 {
@@ -60,10 +77,28 @@
   .presentation {
     height: 90vh;
     font-size: 28pt;
+
+    background-size: cover;
   }
 
   .presentation h1 {
     font-size: 50pt;
+  }
+
+  .presentationLinks {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+
+  .presentationLinks a {
+    border: solid #fff 0.5px;
+    padding: 2rem;
+    border-radius: 50%;
+  }
+
+  .presentationLinks a:hover {
+    background-color: #444444a0;
   }
 
   .about {

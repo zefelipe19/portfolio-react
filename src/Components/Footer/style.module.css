@@ -34,6 +34,16 @@
   border-radius: 8px;
 }
 
+.submit {
+  cursor: pointer;
+  font-size: larger;
+}
+
+.submit:hover {
+  background-color: blue;
+  color: #fff;
+}
+
 .social {
   display: flex;
   gap: 1rem;

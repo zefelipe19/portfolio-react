@@ -23,7 +23,7 @@ export function Footer () {
             message: message,
             email: email
         }
-        emailjs.send('service_ibbch5l', 'template_bm1xk4m', templateParams, 'PljicUbcxAqtYGntf')
+        emailjs.send('service_ibbch5l', 'template_l6acnum', templateParams, 'PljicUbcxAqtYGntf')
         .then((response) => {
             console.log("Email enviado", response.status, response.text)
             setName('')
@@ -50,7 +50,7 @@ export function Footer () {
                     <textarea name="content" id="content" cols={30} rows={10}
                     placeholder="Your Idea..." onChange={(event) => setMessage(event.target.value)}></textarea>
 
-                    <input type="submit" value="Send"/>
+                    <input type="submit" value="Send" className={style.submit}/>
                 </form>
                 
                 <ul className={style.social}>
