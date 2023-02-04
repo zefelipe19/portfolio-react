@@ -1,5 +1,6 @@
 .card {
-  height: 200px;
+  min-height: 200px;
+  width: 90%;
   padding: 1rem;
 
   color: #fff;
@@ -38,9 +39,20 @@
   gap: 1rem;
 }
 
+.links a {
+  background-color: #4444448b;
+  border-radius: 15px;
+  padding: 1rem;
+  margin: 15px;
+}
+
+.links a:hover {
+  background-color: #444444e6;
+}
+
 @media (min-width: 800px) {
   .card {
-    height: 20%;
+    min-height: 250px;
     width: 40%;
   }
 }

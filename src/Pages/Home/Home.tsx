@@ -1,7 +1,7 @@
 import React from "react"
 
 import style from "./style.module.css"
-import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"
+import { FaLinkedin, FaGithub, FaInstagram, FaPython, FaJava } from "react-icons/fa"
 
 import { Card } from "../../Components/Card/Card"
 import db from "../../assets/database.json"
@@ -28,15 +28,13 @@ export function Home() {
                     </div>
                 </div>
                 <div className={style.about}>
-                    <h4>Hi, I'm Felipe, I'm from Brazil.</h4>
+                    <h3>Olá, Eu me chamo José Felipe!</h3>
                     <p>
-                        Since i was a kid i'm fascinated for technology and i get start my studies in 2022 when i finally got a laptop.
-                        I started with Python and your beautiful write and after i start to learn HTML, CSS and JavaScript for Web Development.
-                        Now i have the knowlogy necessary to get start my carrear and continue to improve my skills to build every aplication better then other.
+                        Sou <strong>Desenvolvedor Web Full Stack</strong>, tenho dominio em <strong>Python</strong> com Django, Django Rest Framework e  <strong>JavaScript</strong> com React.js além é claro de <strong>HTML</strong> e <strong>CSS</strong>. Sou autodidata e estou sempre em busca de uma melhoria constante com o objetivo de construir uma carreira sólida com cada app melhor que o anterior.
                     </p>
                 </div>
                 <div className={style.projects}>
-                    <h4>Take a look on my projects.</h4>
+                    <h4>Dê uma olhada nos meus projetos.</h4>
                     <div className={style.projectsItens}>
                         {
                             db.Projects.map((project) => {

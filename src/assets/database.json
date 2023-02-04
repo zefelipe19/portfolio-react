@@ -5,16 +5,18 @@
             "name": "Estudos React",
             "link": "https://zefelipe-estudos.netlify.app",
             "github": "https://github.com/zefelipe19/Estudos_React",
-            "description" : "A simple ToDo List build with react.js.",
-            "image": "https://picsum.photos/200"
+            "description" : "Um simples app de tarefas feito em React.js",
+            "image": "",
+            "video": ""
         },
         {
             "id": 2,
             "name": "GitHub-Api",
             "link": "https://github-users-zefelipe19.netlify.app",
             "github": "https://github.com/zefelipe19/GitHub-Api",
-            "description": "A web app build with react.js using github api to get users information.",
-            "image": "https://picsum.photos/200"
+            "description": "Um app que ultiliza a api do GitHub para fazer pesquisa em seus usuários.",
+            "image": "https://picsum.photos/200",
+            "video": ""
         }
     ]
     

@@ -15,7 +15,7 @@ export function Footer () {
         event.preventDefault()
         
         if(email === "" || name === "" || message === "") {
-            alert("Please check all spaces...")
+            alert("Profavor preencha todos os espaços!")
             return
         }
         const templateParams = {
@@ -37,20 +37,20 @@ export function Footer () {
     return(
         <footer>
             <div className={style.contact}>
-                <h4>Let's work togheder.</h4>
+                <h4>Vamos trabalhar juntos? <br /> Me mande uma menssagem!</h4>
                 <form onSubmit={handleForm}>
-                    <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Your email" onChange={(event) => setEmail(event.target.value)}/>
-
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" id="name"
-                    placeholder="Your name" onChange={(event) => setName(event.target.value)}/>
-                    
+                    placeholder="Seu Nome" onChange={(event) => setName(event.target.value)}/>
+
+                    <label htmlFor="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Seu E-mail" onChange={(event) => setEmail(event.target.value)}/>
+
                     <label htmlFor="content">Idea</label>
                     <textarea name="content" id="content" cols={30} rows={10}
-                    placeholder="Your Idea..." onChange={(event) => setMessage(event.target.value)}></textarea>
+                    placeholder="Sua Ideia..." onChange={(event) => setMessage(event.target.value)}></textarea>
 
-                    <input type="submit" value="Send" className={style.submit}/>
+                    <input type="submit" value="Pronto" className={style.submit}/>
                 </form>
                 
                 <ul className={style.social}>

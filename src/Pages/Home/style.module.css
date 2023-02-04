@@ -29,7 +29,7 @@
 .presentationLinks a {
   border: solid #fff 0.5px;
   padding: 10px;
-  border-radius: 8%;
+  border-radius: 10px;
 
   background-color: #44444457;
 }
@@ -95,7 +95,6 @@
   .presentationLinks a {
     border: solid #fff 0.5px;
     padding: 2rem;
-    border-radius: 50%;
   }
 
   .presentationLinks a:hover {
