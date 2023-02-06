@@ -16,7 +16,7 @@
   margin-bottom: 1rem;
   font-family: monospace;
 
-  background-image: url("../../assets/Images/background-2.jpg");
+  background-image: url("../../assets/Images/background.jpg");
   background-size: cover;
 }
 
@@ -79,7 +79,7 @@
     height: 90vh;
     font-size: 28pt;
 
-    background-size: cover;
+    background-position: center;
   }
 
   .presentation h1 {
