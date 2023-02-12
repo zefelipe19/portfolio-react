@@ -4,8 +4,11 @@
   padding: 1rem;
 
   color: #fff;
-  background-color: #00040d;
+  background-color: #041d5aa8;
+  border: 1px solid #fff;
   border-radius: 8px;
+
+  box-shadow: #000 1px 5px 15px;
 
   display: flex;
   flex-direction: column;
@@ -40,14 +43,15 @@
 }
 
 .links a {
-  background-color: #4444448b;
+  border: 1px solid #fff;
+  background-color: #01206fc5;
   border-radius: 15px;
   padding: 1rem;
   margin: 15px;
 }
 
 .links a:hover {
-  background-color: #444444e6;
+  background-color: #022e9ca8;
 }
 
 @media (min-width: 800px) {

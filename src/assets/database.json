@@ -15,9 +15,18 @@
             "link": "https://github-users-zefelipe19.netlify.app",
             "github": "https://github.com/zefelipe19/GitHub-Api",
             "description": "Um app que ultiliza a api do GitHub para fazer pesquisa em seus usuários.",
-            "image": "https://picsum.photos/200",
+            "image": "",
             "video": ""
-        }
+        },
+        {
+            "id": 3,
+            "name": "Carrinho de Compras",
+            "link": "https://projeto-carrinho-de-compras.netlify.app",
+            "github": "https://github.com/zefelipe19/carrinho-de-compras",
+            "description": "Um projeto que simula um e-commerce com um carrinho de compras.",
+            "image": "",
+            "video": "" 
+        }   
     ]
     
 }

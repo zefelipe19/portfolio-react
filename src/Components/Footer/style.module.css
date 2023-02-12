@@ -44,6 +44,11 @@
   color: #fff;
 }
 
+.copy {
+  display: flex;
+  justify-content: center;
+}
+
 .social {
   display: flex;
   gap: 1rem;

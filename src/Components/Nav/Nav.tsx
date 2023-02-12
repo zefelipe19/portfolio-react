@@ -10,11 +10,11 @@ export function NavBar () {
         <header>
             <nav className={style.navbar}>
                 <Link to={"/"}><img src={Icon} alt="J.F icon" /></Link>
-                <ul className={style.navitens}>
+                {/* <ul className={style.navitens}>
                     <li><Link to={"/"} rel="noopener noreferrer">Home</Link></li>
                     <li><Link to={"projects/"} rel="noopener noreferrer">Projetos</Link></li>
                     <li><Link to={"#"} rel="noopener noreferrer">Contato</Link></li>
-                </ul>
+                </ul> */}
             </nav>
         </header>
     )

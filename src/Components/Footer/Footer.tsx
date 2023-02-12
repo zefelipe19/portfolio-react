@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser"
 
 import style from "./style.module.css"
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"
+import {AiOutlineCopyrightCircle} from "react-icons/ai"
 
 export function Footer () {
     const [email, setEmail] = useState('')
@@ -41,10 +42,10 @@ export function Footer () {
                 <form onSubmit={handleForm}>
                     <label htmlFor="name">Name</label>
                     <input type="text" name="name" id="name"
-                    placeholder="Seu Nome" onChange={(event) => setName(event.target.value)}/>
+                    placeholder="Seu Nome." onChange={(event) => setName(event.target.value)}/>
 
                     <label htmlFor="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Seu E-mail" onChange={(event) => setEmail(event.target.value)}/>
+                    <input type="email" name="email" id="email" placeholder="Seu Melhor E-mail." onChange={(event) => setEmail(event.target.value)}/>
 
                     <label htmlFor="content">Idea</label>
                     <textarea name="content" id="content" cols={30} rows={10}
@@ -53,6 +54,10 @@ export function Footer () {
                     <input type="submit" value="Pronto" className={style.submit}/>
                 </form>
                 
+                <div className={style.copy}>
+                    <p><AiOutlineCopyrightCircle/> Todos os direitos reservados a José Felipe</p>
+                </div>
+
                 <ul className={style.social}>
                     <li>
                         <a href={"https://github.com/zefelipe19"} target="_blank" rel="noopener noreferrer">
