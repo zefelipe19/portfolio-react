@@ -3,29 +3,23 @@
             {   
             "id": 1,
             "name": "Estudos React",
-            "link": "https://zefelipe-estudos.netlify.app",
+            "link": "https://estudos-reactjs.vercel.app",
             "github": "https://github.com/zefelipe19/Estudos_React",
-            "description" : "Um simples app de tarefas feito em React.js",
-            "image": "",
-            "video": ""
+            "description" : "Um simples app de tarefas feito em React.js"
         },
         {
             "id": 2,
             "name": "GitHub-Api",
-            "link": "https://github-users-zefelipe19.netlify.app",
+            "link": "https://find-users-github.vercel.app",
             "github": "https://github.com/zefelipe19/GitHub-Api",
-            "description": "Um app que ultiliza a api do GitHub para fazer pesquisa em seus usuários.",
-            "image": "",
-            "video": ""
+            "description": "Um app que ultiliza a api do GitHub para fazer pesquisa em seus usuários."
         },
         {
             "id": 3,
             "name": "Carrinho de Compras",
-            "link": "https://projeto-carrinho-de-compras.netlify.app",
+            "link": "https://projeto-compras.vercel.app",
             "github": "https://github.com/zefelipe19/carrinho-de-compras",
-            "description": "Um projeto que simula um e-commerce com um carrinho de compras.",
-            "image": "",
-            "video": "" 
+            "description": "Um projeto que simula um e-commerce com um carrinho de compras."
         }   
     ]
     

@@ -4,11 +4,15 @@
   padding: 1rem;
 
   color: #fff;
-  background-color: #041d5aa8;
-  border: 1px solid #fff;
+  background-image: linear-gradient(
+    159deg,
+    rgba(68, 68, 68, 1) 30%,
+    rgba(55, 55, 55, 1) 100%
+  );
+
   border-radius: 8px;
 
-  box-shadow: #000 1px 5px 15px;
+  box-shadow: #000 1px 3px 5px;
 
   display: flex;
   flex-direction: column;
@@ -30,13 +34,6 @@
   justify-content: center;
 }
 
-.description img {
-  height: 90px;
-  width: 90px;
-  margin: 5px;
-  border-radius: 8px;
-}
-
 .links {
   display: flex;
   gap: 1rem;
@@ -44,14 +41,14 @@
 
 .links a {
   border: 1px solid #fff;
-  background-color: #01206fc5;
+  background-color: #444;
   border-radius: 15px;
   padding: 1rem;
   margin: 15px;
 }
 
 .links a:hover {
-  background-color: #022e9ca8;
+  background-color: #44444457;
 }
 
 @media (min-width: 800px) {

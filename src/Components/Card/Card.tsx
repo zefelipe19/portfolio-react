@@ -7,17 +7,15 @@ type CardProps = {
     description: string
     link: string
     github: string
-    image?: string
-    video?: string 
 }
 
 
-export function Card ({title, description, link, github, image, video}:CardProps) {
+export function Card ({title, description, link, github}:CardProps) {
+
     return(
         <div className={style.card}>
             <h5>{title}</h5>
             <div className={style.description}>
-                {image&&(<img src={image} alt="" />)}
                 <p>{description}</p>
             </div>
             <div className={style.links}>

@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react"
 import axios from "axios";
 
+import {FaGithub} from "react-icons/fa"
 import styles from "./style.module.css"
 
 type ProjectCardProps = {
@@ -12,7 +13,7 @@ type ProjectCardProps = {
 function ProjectCard ({name, url}:ProjectCardProps) {
     return(
         <div className={styles.card}>
-            <h5>{name}</h5>
+            <h4>{name}</h4>
             <a href={url} target="_blank" rel="nooper noorefere">See</a>
         </div>
     )
@@ -39,9 +40,9 @@ export function Projects () {
     }
 
     return(
-        <main>
-            <h1>All GitHub Projects</h1>
-            <div>
+        <main className={styles.projects}>
+            <h2>Veja aqui todos os meus projetos do GitHub. <FaGithub/></h2>
+            <div className={styles.allProjects}>
                 {
                     allProjects.map((project: ProjectProps) => {
                         return(

@@ -45,7 +45,7 @@ export function Home() {
                                     description={project.description} 
                                     link={project.link}
                                     github={project.github}
-                                    image={project.image}/>
+                                    />
                                 )
                             })
                         }
