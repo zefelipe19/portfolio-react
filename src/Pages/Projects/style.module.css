@@ -8,7 +8,7 @@
 
 .card {
   height: 45%;
-  width: 45%;
+  width: 90%;
   padding: 2rem;
 
   border-radius: 8px;
@@ -49,6 +49,7 @@
 
 @media (min-width: 800px) {
   .card {
-    min-height: 150px;
+    height: 45%;
+    width: 45%;
   }
 }

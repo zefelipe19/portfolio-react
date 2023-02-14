@@ -1,7 +1,7 @@
 import React from "react"
 
 import style from "./style.module.css"
-import { FaLinkedin, FaGithub, FaInstagram, FaPython, FaJava } from "react-icons/fa"
+import { FaLinkedin, FaGithub } from "react-icons/fa"
 
 import { Card } from "../../Components/Card/Card"
 import db from "../../assets/database.json"
@@ -12,15 +12,12 @@ export function Home() {
     return(
         <>
             <main>
-                <div className={style.presentation}>
+                <div className={style.presentation} id="home">
                     <h1>José Felipe</h1>
                     <h5>Web Developer JavaScript | Python</h5>
                     <div className={style.presentationLinks}>
                     <a href={"https://www.linkedin.com/in/jose-felipe-paula"} target="_blank" rel="noopener noreferrer">
                         <FaLinkedin/> Linkedin
-                    </a>
-                    <a href={"https://www.instagram.com/ze_felipe1903/"} target="_blank" rel="noopener noreferrer">
-                        <FaInstagram/> Instagram
                     </a>
                     <a href={"https://github.com/zefelipe19"} target="_blank" rel="noopener noreferrer">
                         <FaGithub/> GitHub
@@ -30,7 +27,7 @@ export function Home() {
                 <div className={style.about}>
                     <h3>Olá, Eu me chamo José Felipe!</h3>
                     <p>
-                        Sou <strong>Desenvolvedor Web Full Stack</strong>, tenho dominio em <strong>Python</strong> com Django, Django Rest Framework e  <strong>JavaScript</strong> com React.js além é claro de <strong>HTML</strong> e <strong>CSS</strong>. Sou autodidata e estou sempre em busca de uma melhoria constante com o objetivo de construir uma carreira sólida com cada app melhor que o anterior.
+                        <strong>Graduando em Analise e Desenvolvimento de Sistemas</strong>, comecei no inicio de Fevereiro de 2023, mas, estudo de forma autodidata desde o fim de 2021, com o objetivo de me tornar um <strong>Desenvolvedor Full Stack Web</strong> possuo experiência com Django e Django Rest Framework que utilizam <strong>Python</strong>, React.js com <strong>TypeScript</strong> que utilizam <strong>JavaScript</strong> além de <strong>HTML</strong> e <strong>CSS</strong>.
                     </p>
                 </div>
                 <div className={style.projects}>

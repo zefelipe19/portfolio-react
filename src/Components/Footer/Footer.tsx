@@ -1,10 +1,11 @@
 import React from "react"
 import { useState, FormEvent } from "react"
+import {Link} from "react-router-dom"
 import emailjs from "@emailjs/browser"
 
 import style from "./style.module.css"
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa"
-import {AiOutlineCopyrightCircle} from "react-icons/ai"
+import {AiOutlineCopyrightCircle, AiFillHome, AiFillProject} from "react-icons/ai"
 
 export function Footer () {
     const [email, setEmail] = useState('')
@@ -36,7 +37,7 @@ export function Footer () {
         })
     }
     return(
-        <footer>
+        <footer id="footer">
             <div className={style.contact}>
                 <h4>Vamos trabalhar juntos? <br /> Me mande uma menssagem!</h4>
                 <form onSubmit={handleForm}>
@@ -75,6 +76,10 @@ export function Footer () {
                         </a>
                     </li>
                 </ul>
+                <nav className={style.footerNav}>
+                    <a href="#header" rel="noopener noreferrer"><AiFillHome/> Home</a>
+                    <Link to={"projects/"} rel="noopener noreferrer"><AiFillProject/> Projetos</Link>
+                </nav>
             </div>
         </footer>
     )
